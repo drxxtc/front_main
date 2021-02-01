@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!--Подключение стиля Caveat-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+<body >
+  
+    
+ <!--Фон navbar-->
+ 
+ 
+   
+ <nav class="navbar navbar-expand-lg fixed-top ">
+    
+    <!--Фото+ИмяФамилия(Девое меню)-->
+    <a class="navbar-brand" href="#"
+    style="position: absolute;
+    width: 260px;
+    height: 105px;
+    left: 30px;
+    top: 8px;
+    font-weight: bold;
+    font-size: 48px;
+   line-height: 60px;
+   display: flex;
+   align-items: center;
+   text-align: center;"
+    
+    ><img src="images/photo.png" width="85" height="85"  class="d-inline-block align-top" alt="">Имя Фамилия</a>
+
+ 
+    <!--Правое меню-->
+ <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-4">
+        <li class="nav-item"> 
+            <a class="nav-link " href="#" style="position: absolute;
+            width: 192px;
+            height: 38px;
+            left: 44%;
+            top: 46%;
+            
+            font-family: Caveat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 35px;
+            /* or 73% */
+            
+            
+            color: #05386B;">Сообщество</a>
+      
+        <li class="nav-item">
+            <a class="nav-link " href="#" style="
+            position: absolute;
+           width: 148px;
+           height: 46px;
+           left: 65%;
+           top: 9%;
+
+            font-family: Caveat;
+           font-style: normal;
+           font-weight: normal;
+           font-size: 48px;
+          line-height: 60px;
+
+            color: #05386B">Команда</a>
+
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="position: absolute;
+            width: 144px;
+            height: 63px;
+            left: 84%;
+            top: 20%;
+            
+            font-family: Caveat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 35px;
+            /* or 73% */
+            
+            text-align: center;
+            
+            color: #05386B;">Мои проекты</a>
+          </li>
+
+        
+      </ul>
+    </div>
+ </nav>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   <!--Кнопка создания нового проекта-->
+   
+  
+  
+  
+    
+    <div class="btn-group-toggle" data-toggle="buttons"></div>
+    <button type="button" class="btn btn-primary active" 
+      style="background: linear-gradient(180deg, #8EE4AF 0%, #379683 99.99%, #05386B 100%, #379683 100%);
+      width: 220px;
+      height: 55px;
+      left: 45px;
+      top: 138px;"
+    >Создать новый</button>
+    
+     <!-- <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Search all fields e.g. HTML">
+                        <script>
+                            $(document).ready(function () {
+                                $("#myInput").on("keyup", function () {
+                                    var value = $(this).val().toLowerCase();
+                                    $("#myTable tr").filter(function () {
+                                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                    });
+                                });
+                            });
+                        </script>
+      <form class="form-inline ">
+        <input class="form-control" type="search" placeholder="Введите название проекта" aria-label="Search" style="width: 90%;
+        height: 50px;
+        top: 223px;
+    
+        
+        background: #FFFFFF;
+        border-radius: 10px;">
+      
+        <a class='botn btn-primary' href='#' style=" position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        width: 64px;
+        height: 48px;
+        left: 93%;
+        "><img src='images/loupe.png'></a>  
+      </form>
+    </div>
+  -->
+  <div class="container search-table">
+    <div class="search-box">
+                <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Введите название проекта">
+                <script>
+                    $(document).ready(function () {
+                        $("#myInput").on("keyup", function () {
+                            var value = $(this).val().toLowerCase();
+                            $("#myTable tr").filter(function () {
+                                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                            });
+                        });
+                    });
+                </script>
+    </div>
+    <div class="col-md-12">
+      <div class="search-list">
+        <table class="table table-light"></table> 
+        <table class="table table-hover"></table>         
+        <table class="table table-bordered"></table>
+         <table class="table" id="myTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Имя проекта</th>
+              <th>Статус</th>
+              <th>Дата создания</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>123</td>
+              <td>ABCD</td>
+              <td>В работе</td>
+              <td>512мб</td>
+            </tr>
+            <tr>
+              <td>124</td>
+              <td>ABCСD</td>
+              <td>Завершен</td>
+              <td>1024мб</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+      
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+     -->
+  
+  </body>
+  </html>
